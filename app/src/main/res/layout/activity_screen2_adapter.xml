@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layout"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_10dp"
+        android:paddingTop="@dimen/margin_10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textSize="15dp"
+            android:layout_margin="5dp"
+            android:maxLines="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/mid"
+            android:text="Id=1"
+            ></TextView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textSize="15dp"
+            android:layout_marginHorizontal="5dp"
+            android:id="@+id/votecount"
+            android:textColor="@color/black"
+            android:text="34223"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/voteavr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="2"
+            android:text="title=zsfhohfosdhggghhgdddddddddd"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            ></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:id="@+id/title"
+            android:layout_marginBottom="10dp"
+            android:text="23322"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="5dp"
+            ></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:id="@+id/relesedate"
+            android:layout_marginBottom="10dp"
+            android:text="2352"
+            android:layout_marginHorizontal="5dp"
+            ></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:id="@+id/lnguage"
+            android:layout_marginBottom="10dp"
+            android:text="ren"
+            android:layout_marginHorizontal="5dp"
+            ></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:id="@+id/originaltitle"
+            android:layout_marginBottom="10dp"
+            android:text="efjdsfj"
+            android:layout_marginHorizontal="5dp"
+            ></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:id="@+id/generid"
+            android:layout_marginBottom="10dp"
+            android:text="25,26"
+            android:layout_marginHorizontal="5dp"
+            ></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:id="@+id/adult"
+            android:layout_marginBottom="10dp"
+            android:text="flase"
+            android:layout_marginHorizontal="5dp"
+            ></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:id="@+id/overview"
+            android:layout_marginBottom="10dp"
+            android:text="ren"
+            android:layout_marginHorizontal="5dp"
+            ></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:id="@+id/populrty"
+            android:layout_marginBottom="10dp"
+            android:text="233"
+            android:layout_marginHorizontal="5dp"
+            ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:id="@+id/mediatype"
+            android:layout_marginBottom="10dp"
+            android:text="movie"
+            android:layout_marginHorizontal="5dp"
+            ></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:id="@+id/linearlyout">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/backpath"
+                android:layout_marginHorizontal="@dimen/margin_10dp"
+                android:src="@drawable/ic_baseline_account_box_24"></ImageButton>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/posterpath"
+                android:layout_marginHorizontal="@dimen/margin_10dp"
+                android:src="@drawable/ic_baseline_account_box_24"></ImageButton>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.002dp"
+        android:layout_weight="2"
+        android:textSize="15dp"
+        android:layout_below="@id/layout"
+        android:background="@color/black"
+        ></TextView>
+
+
+</RelativeLayout>
