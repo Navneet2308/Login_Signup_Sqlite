@@ -46,7 +46,11 @@ public class Screen2 extends AppCompatActivity {
 
     public void Showdata()
     {
-         final String title="No title";
+        final String[] title = {"No title"};
+        final String[] release_date = {"No title"};
+       final String[] original_title = {"No title"};
+        final String[] adult = {"No title"};
+        final  String[] generid={"no title "};
         requestQueue= Volley.newRequestQueue(getApplicationContext());
 
         StringRequest request=new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
@@ -64,6 +68,102 @@ public class Screen2 extends AppCompatActivity {
 
 
 
+
+
+                        if (obj.has("genre_ids"))
+                        {
+                            JSONArray jsonArray1= (JSONArray) obj.get("genre_ids");
+
+                                generid[0] = jsonArray1.get(0).toString();
+
+
+
+
+
+                        }
+
+                        else
+                        {
+                            generid[0] =  "null";
+
+                        }
+
+
+
+
+
+
+
+
+                        if (obj.has("title"))
+                        {
+
+                             title[0] =  obj.getString("title");
+                        }
+
+                        else
+                        {
+                            title[0] =  "null";
+
+                        }
+
+
+
+                        if (obj.has("release_date"))
+                        {
+
+                            release_date[0] =  obj.getString("release_date");
+                        }
+
+                        else
+                        {
+                            release_date[0] =  "null";
+
+                        }
+
+
+                        if (obj.has("original_title"))
+                        {
+
+                            original_title[0] =  obj.getString("original_title");
+                        }
+
+                        else
+                        {
+                            original_title[0] =  "null";
+
+                        }
+
+
+                        if (obj.has("original_title"))
+                        {
+
+                            original_title[0] =  obj.getString("original_title");
+                        }
+
+                        else
+                        {
+                            original_title[0] =  "null";
+
+                        }
+
+
+
+
+
+
+
+                        if (obj.has("adult"))
+                        {
+
+                            adult[0] =  obj.getString("adult");
+                        }
+
+                        else
+                        {
+                            adult[0] =  "null";
+
+                        }
 
 
 
@@ -89,14 +189,13 @@ public class Screen2 extends AppCompatActivity {
                         model.setMid(mid);
                         model.setMvotec(vote_count);
                         model.setMvotea(vote_average);
-//                        model.setMtitle(title);
-
-//                        model.setMreldate(release_date);
+                      model.setMtitle(title[0]);
+                       model.setMreldate(release_date[0]);
                         model.setMorlang(original_language);
-//                        model.setMortitle(original_title);
+                        model.setMortitle(original_title[0]);
                         model.setMbackimg(backdrop_path);
-
-//                        model.setMadult(adult);
+                         model.setMgnrid(generid[0]);
+                       model.setMadult(adult[0]);
                         model.setMoverview(overview);
                         model.setMposterimg(poster_path);
                         model.setMpopularity(popularity);

@@ -6,6 +6,7 @@ import android.widget.TextView;
 public class Screen2Model {
     String mid,mvotec,mvotea,mtitle,mreldate,morlang,mortitle,mgnrid,madult,moverview,mpopularity,mmediatype,mbackimg,mposterimg;
 
+
     public String getMid() {
         return mid;
     }

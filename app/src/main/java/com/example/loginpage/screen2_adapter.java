@@ -51,16 +51,19 @@ public class screen2_adapter extends RecyclerView.Adapter<screen2_adapter.ViewHo
     @Override
     public void onBindViewHolder(@NonNull final screen2_adapter.ViewHolder holder, final int position) {
 
-        holder.id.setText(mydata.get(position).getMid());
-        holder.votec.setText(mydata.get(position).getMvotec());
-        holder.votea.setText(mydata.get(position).getMvotea());
-        holder.orlang.setText(mydata.get(position).getMorlang());
-        holder.overview.setText(mydata.get(position).getMoverview());
-//        holder.posterimg.setText(mydata.get(position).getMid());
-        holder.popularity.setText(mydata.get(position).getMpopularity());
-        holder.mediatype.setText(mydata.get(position).getMmediatype());
-     holder.title.setText(mydata.get(position).getMtitle());
-//        holder.backimg.setImageBitmap();
+        holder.id.setText("Id- "+mydata.get(position).getMid());
+        holder.votec.setText("Vote Count- "+mydata.get(position).getMvotec());
+        holder.votea.setText("Vote Average- "+mydata.get(position).getMvotea());
+        holder.orlang.setText("Original Language- "+mydata.get(position).getMorlang());
+        holder.overview.setText("Overview- "+mydata.get(position).getMoverview());
+        holder.popularity.setText("Popularity- "+mydata.get(position).getMpopularity());
+        holder.mediatype.setText("Media Type- "+mydata.get(position).getMmediatype());
+     holder.title.setText("Title- "+mydata.get(position).getMtitle());
+     holder.reldate.setText("Release Date- "+mydata.get(position).getMreldate());
+        holder.adult.setText("Adult- "+mydata.get(position).getMadult());
+        holder.gnrid.setText("Genre Ids- "+mydata.get(position).getMgnrid());
+        holder.ortitle.setText("Original Title- "+mydata.get(position).getMortitle());
+        holder.gnrid.setText("Genre id- "+mydata.get(position).getMgnrid());
 
 
         Picasso.with(context)
